@@ -1,0 +1,54 @@
+<!-- this is the version I can change -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cyberPet3.css">
+
+</head>
+
+<body>
+
+    <div class="allButtons">
+        <button id="playvid" onclick="playVid()" type="button">Play</button>
+        <button id="pausevid" onclick="pauseVid()" type="button">Stop</button>
+        <button id="playBark" onclick="playBark()" type="button">Bark</button>
+        <!-- <button id="drink"onclick="drink()" type="button">Drink</button> -->
+        <button id="feedPet">Food</button>
+    </div>
+
+    <p class="speech"></p>
+
+    <audio id="audio">
+        <source src="barkDog.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <audio id="drink">
+        <source src="dogDrink.mp3" type="audio/mpeg">
+    </audio>
+
+    <div .video></div>
+    <video id="video" poster="img/videoframe.jpg" loop="">
+        <source type="video/mp4" src="adog_video.mp4">
+    </video>
+
+    <!-- <video  width="320" height="176">
+        <source src="adog_video.mp4" type="video/mp4">
+       
+        
+      </video> -->
+    <script src="jQuery.js"></script>
+    <script src="cyberPet3.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        });
+    </script>
+</body>
+
+</html>
